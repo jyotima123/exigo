@@ -17,6 +17,12 @@ $(document).ready(function() {
   });
 
 
+  $('[data-toggle="toggle"]').change(function(){
+    // $("i", this).toggleClass("fa-chevron-down fa-chevron-up");
+		$(this).parents().next('.hide').toggle();
+	});
+
+
 } );
 
 

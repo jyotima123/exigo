@@ -202,11 +202,9 @@ img {
   font-size: .8rem;
   margin-right: 0.5rem;
   outline: none;
-  -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 5px #ddd;
-          box-shadow: 0 1px 5px #ddd;
+  box-shadow: 0 1px 5px #ddd;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -331,10 +329,10 @@ img {
 }
 
 .icon.icon-sm {
-  width: 30px;
-  height: 30px;
-  font-size: 16px;
-  line-height: 30px;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 22px;
 }
 
 .icon.icon-md {
@@ -360,16 +358,7 @@ img {
 .tgl *:after,
 .tgl *:before,
 .tgl + .tgl-btn {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection,
-.tgl *::-moz-selection,
-.tgl *:after::-moz-selection,
-.tgl *:before::-moz-selection,
-.tgl + .tgl-btn::-moz-selection {
-  background: none;
+  box-sizing: border-box;
 }
 
 .tgl::selection, .tgl:after::selection, .tgl:before::selection,
@@ -387,10 +376,7 @@ img {
   height: 2em;
   position: relative;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
@@ -417,14 +403,12 @@ img {
   background: #f0f0f0;
   border-radius: 2em;
   padding: 2px;
-  -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
 .tgl-light + .tgl-btn:after {
   border-radius: 50%;
   background: #fff;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
@@ -433,8 +417,7 @@ img {
 }
 
 .dropdown-menu {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 0;
 }
 
@@ -467,7 +450,6 @@ img {
   padding: 10px;
   border-radius: 4px;
   border-bottom: 4px solid #15824B;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -477,14 +459,12 @@ img {
 .file-upload-btn:hover {
   background: #1AA059;
   color: #ffffff;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   cursor: pointer;
 }
 
 .file-upload-btn:active {
   border: 0;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
@@ -547,7 +527,6 @@ img {
   padding: 10px;
   border-radius: 4px;
   border-bottom: 4px solid #b02818;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   outline: none;
   text-transform: uppercase;
@@ -557,14 +536,12 @@ img {
 .remove-image:hover {
   background: #c13b2a;
   color: #ffffff;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   cursor: pointer;
 }
 
 .remove-image:active {
   border: 0;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
@@ -581,8 +558,7 @@ label {
 
 .form-control:focus {
   border-color: #151618;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .app-content {
@@ -605,17 +581,11 @@ label {
 .app-header nav {
   border-top: 4px solid #d60e0e;
   border-bottom: 1px solid #ddd;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 65px;
   background-color: #fff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: .4rem 6.5rem;
   position: fixed;
   z-index: 10;
@@ -630,8 +600,6 @@ label {
 }
 
 .app-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -671,15 +639,9 @@ a:hover {
 }
 
 .page-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-title .title {
@@ -779,15 +741,11 @@ hr {
 }
 
 .filter-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .filter-by,
 .search-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -827,18 +785,11 @@ hr {
 
 .login-page {
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .login-page .bg-img {
@@ -857,16 +808,9 @@ hr {
   padding-top: 10rem;
   background-color: #d60e0e;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login-page .login-form .form-header {
@@ -893,18 +837,6 @@ hr {
   color: #fff;
 }
 
-.login-page .login-form .form-fields .form-group .v-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.login-page .login-form .form-fields .form-group .v-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.login-page .login-form .form-fields .form-group .v-control::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .login-page .login-form .form-fields .form-group .v-control::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -914,8 +846,7 @@ hr {
 }
 
 .login-page .login-form .form-fields .form-group .login-btn {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin-top: 1rem;
 }
 
@@ -938,12 +869,8 @@ hr {
 }
 
 .company-profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .company-profile .title {
@@ -984,8 +911,6 @@ hr {
 }
 
 .top-event-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1019,6 +944,14 @@ hr {
 .track_lead_tbl tr td .input-calc {
   width: 70px;
   height: 30px;
+}
+
+.track_lead_tbl tbody.hide {
+  background-color: #eee;
+}
+
+.track_lead_tbl tbody.hide td {
+  background-color: transparent;
 }
 
 .track_exp_tbl tr td:last-child {
@@ -1068,13 +1001,15 @@ hr {
 }
 
 .calander-ctrl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .calander-ctrl span {
   margin-right: 0;
+}
+
+[data-toggle="toggle"] {
+  display: none;
 }
 
 .add-campaign-list {
@@ -1100,15 +1035,11 @@ hr {
     position: fixed;
     width: 250px;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background: #2c3e50;
     top: 65px;
     left: -100%;
     flex-direction: column;
-    -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
   }
   nav .nav-links .link {
@@ -1128,14 +1059,12 @@ hr {
     position: relative !important;
     float: none;
     background-color: rgba(255, 255, 255, 0.1);
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border-radius: 0;
     border: 0;
     padding: 0;
     margin: 0;
-    -webkit-transform: none !important;
-            transform: none !important;
+    transform: none !important;
   }
   .nav-dropdown .link {
     font-weight: 200;
@@ -1163,10 +1092,7 @@ hr {
     margin-bottom: 1rem;
   }
   .login-page {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .login-page .login-form,
   .login-page .login-content {

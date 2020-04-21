@@ -383,8 +383,17 @@ hr{background-color:rgba($light-color, 0.2);}
             }
         }
     }
+    tbody{
+        &.hide{
+            background-color: $base-color;
+            td{
+                background-color: transparent;
+            }
+        }
+    }
 }
 
+// TRACK EXPENSES TABLE
 .track_exp_tbl{
     tr{
         td{
@@ -443,6 +452,12 @@ hr{background-color:rgba($light-color, 0.2);}
     }
 }
 
+[data-toggle="toggle"] {
+	display: none;
+}
+
+
+
 // MARKETING LEADS PAGE
 .add-campaign-list{
     margin-top: 1rem;
@@ -450,5 +465,8 @@ hr{background-color:rgba($light-color, 0.2);}
         padding-bottom: 1rem;
     }
 }
+
+
+
 
 @import "./mobile";

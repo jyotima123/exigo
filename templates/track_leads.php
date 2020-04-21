@@ -74,7 +74,12 @@
                                         <td><input type="text" class="form-control input-calc"></td>
                                     </tr>
                                     <tr>
-                                        <td>PPC </td>
+                                        <td>
+                                            <label for="accounting" class="icon icon-primary icon-sm mr-2 dp">
+                                            <i class="fa fa-chevron-down"></i></label>
+					                        <input type="checkbox" name="accounting" id="accounting" data-toggle="toggle">    
+                                            PPC 
+                                        </td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
@@ -82,6 +87,28 @@
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                     </tr>
+                                </tbody>
+                                <tbody class="hide skin-base">
+                                    <tr>
+                                        <td>PPC1</td> 
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PPC2</td> 
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
                                     <tr>
                                         <td>Direct Mail</td>
                                         <td><input type="text" class="form-control input-calc"></td>
@@ -145,6 +172,7 @@
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                     </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
