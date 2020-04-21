@@ -1,0 +1,15 @@
+
+label{
+    color: #8794ab;
+}
+.form-control{
+    border-color: transparent;
+   border:1px solid #ddd;
+    font-size: .8rem;
+    font-weight: 600;
+    &:focus{
+        border-color: $secondary-color;
+        box-shadow: none;
+        
+    }
+}

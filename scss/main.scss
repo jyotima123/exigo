@@ -1,0 +1,454 @@
+@import "./config";
+@import "./reset";
+@import "./utilites";
+@import "./form";
+
+.app-content{
+    padding-top: 65px;
+}
+
+// APP HEADER
+.app-header{    
+    .checkbtn{
+        font-size: 30px;
+        float: right;
+        line-height: 60px;
+        margin-right: 15px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+  
+    nav{
+        border-top: 4px solid $primary-color;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        height:65px;
+        background-color: $white-color;
+        align-items: center;
+        justify-content: space-between;
+        padding: .4rem 6.5rem;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+        .logo{
+            margin-top: 10px;
+            color:$primary-color;
+            width: 90px;
+        }
+        ul{
+            display: flex;
+            li> 
+            a {
+                color:$dark-color;
+                padding:.6rem 0rem;
+                letter-spacing: 0.1rem;
+                font-size: 0.8rem;
+                border-bottom: 3px solid transparent;
+                display: inline-block;
+                margin-left: 1.5rem;
+                line-height: 40px;
+                text-transform: uppercase;
+                &.active,
+                &:hover {
+                    color:$primary-color;
+                    text-decoration: none;
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+            .nav-dropdown{
+                a{
+                    display: block;
+                    padding: .5rem 1rem;
+                    font-size: 0.9rem;
+                    &:hover{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.page{ 
+    &-title,
+    &-filter,
+    &-content{
+        padding:1rem 0;
+    }
+
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title{
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-weight: 800;
+            &-icon{
+                margin-right: 1rem;
+            }
+        }
+        .actions-ctrl{
+            .v-btn{
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &-filter{
+        .filter-list{
+            margin: 0 auto;
+            li{
+                display: inline-block;
+                padding: 0 1rem;
+                text-align: left;
+                border-left: 1px solid $base-color;
+                &:first-child{
+                    border-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &-content{
+        
+    }
+}
+
+
+.stats{
+    background-color:$primary-color;
+    padding: 1rem;
+    display: block;
+    border-radius: 3px;
+    border-bottom:3px solid transparent;
+    margin-bottom: 2rem;
+    &.active{
+        border-bottom-color: $secondary-color;
+    }
+    a{
+        &:hover{
+            color: $secondary-color;
+            text-decoration: none;
+        }
+    }
+    .icon{
+        color:$white-color;
+    }
+    h2{
+        font-size: 1.4rem;
+        margin: 10px 0;
+        color:rgba($white-color,  0.7);
+        font-weight: 200;
+    }
+  
+}
+
+.difference{
+    &.down{
+        color: $danger-color;
+    }
+
+    &.up{
+        color: $success-color;
+    }
+}
+
+table th,td{
+    padding:0.6rem;
+    font-size:.8rem;
+    color:#333;
+    vertical-align: middle;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+table{
+    th{
+        background-color: $base-color;
+        text-transform: uppercase;
+        color:$secondary-color;
+        font-weight: 600;
+      
+    }
+    td{
+        background-color: $white-color;
+        font-weight: 400;
+        border-bottom: 1px solid $base-color;
+    }
+
+}
+
+hr{background-color:rgba($light-color, 0.2);}
+
+.filter-row{display: flex; }
+.filter-by,
+.search-field{display: flex;}
+
+
+.block{
+    margin-bottom: 1rem;
+    &.no-padding{
+        .header,
+        .content,
+        .footer{
+            padding:1rem 0;
+        }
+    }
+    .header,
+    .content,
+    .footer{
+        padding:1rem;
+        color:rgba($light-color, 0.7)
+    }
+
+    .header{
+        padding-bottom: 0;
+        font-weight: 400;
+    }
+    .content{
+        font-size: .9rem;
+    }
+
+    &.default{
+        background-color: $dark-color;
+    }
+    &.light{
+        background-color: $light-color;
+    }
+}
+
+
+
+.login-page{
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    .bg-img{
+        background: url('http://52.11.202.204/ui-projects/exigo/bg-img.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .logo{
+        width: 200px;
+    }
+    .login-form{
+        width: 30%;
+        padding-top:10rem;
+        background-color: $primary-color;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .form-header{
+            text-align: center;   
+            color:rgba($white-color,  0.7);
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+            h1{
+                color: $white-color;
+                font-size: 2rem;
+            }
+        }
+        .form-fields{
+            .form-group{
+                margin-bottom: 2rem;
+                .v-control{
+                    background-color: transparent;
+                    border:0;
+                    width: 100%;
+                    border-bottom: 2px solid rgba($white-color,  0.7);
+                    color:$white-color;
+                    &::placeholder {
+                        color:rgba($white-color, 0.5);
+                      }
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .login-btn{
+                    box-shadow: none;
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+    }
+    .login-content{
+        width: 70%;
+        height: 100%;
+        padding:4rem;
+        .details{
+            margin-top: 5rem;
+        }
+        h1{
+            color:$white-color;
+        }
+        p{
+            color:rgba($white-color,  0.7);
+        }
+
+    }
+}
+
+
+.company-profile{
+    display: flex;
+    justify-content: space-between;
+    .title{
+        margin: 10px 0;
+    }
+}
+
+
+.stats-list{
+    overflow-y: scroll;
+    height: 100vh;
+    li{
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding:0.5rem;
+        border-bottom: 1px dotted rgba($white-color, 0.3);
+        margin-bottom: 0.5rem;
+        border-left: 2px solid $secondary-color;
+        h4{
+            text-transform: uppercase;
+            font-size: .9rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.7rem;
+            color: rgba($secondary-color, 0.7);
+        }
+        
+    &:first-child{
+        background-color: $secondary-color;
+        color:$primary-color
+    }
+    }
+}
+
+
+.top-event-list{
+    li{
+        display: flex;
+        span{
+            font-size: 1rem;
+            font-weight: 800;
+        }
+        .event-info{
+            padding-left: 1rem;
+            p{margin-bottom: 0.5rem;}
+        }
+        
+    &:first-child{
+            background-color: $secondary-color;
+            color:$primary-color
+        }
+    }
+}
+
+.page-item.active .page-link{
+    background-color: $secondary-color;
+    border-color :$secondary-color;
+}
+
+
+// TRACK LEADS
+.track_lead_tbl{
+    tr{
+        td{
+            &:nth-child(2){
+                // background-color: #f7f7f7;
+                font-weight: 600;
+            }
+            .input-calc{
+                width:70px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.track_exp_tbl{
+    tr{
+        td{
+            &:last-child{
+                background-color: #f7f7f7;
+                font-weight: 600;
+            }
+            .input-calc{
+                width:70px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.input-group-text{
+    line-height: 1;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #eee;
+    border-color: #eeeeee #eeeeee #eee;
+}
+
+
+.kpis-content{
+    background-color:$base-color;
+    padding:1rem;
+
+    .kpis-block{
+        text-align: center;
+        height: 200px;
+        padding: 2rem;
+        background-color: $white-color;
+        margin-bottom: 1rem;
+        h1{
+            margin-top: 2rem;
+            font-size: 2rem;
+            color:$primary-color;
+            font-weight: 600;
+        }
+        p{
+            text-transform: uppercase;
+            font-weight: 600;
+            color:$secondary-color;
+        }
+    }
+}
+
+// TRACK LEADS
+.calander-ctrl{
+    display: flex;
+    span{
+        margin-right: 0;
+    }
+}
+
+// MARKETING LEADS PAGE
+.add-campaign-list{
+    margin-top: 1rem;
+    li{
+        padding-bottom: 1rem;
+    }
+}
+
+@import "./mobile";

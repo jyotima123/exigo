@@ -1,0 +1,117 @@
+@media (max-width: 600px){
+  .page{
+    padding: 1rem 0 1rem 0;
+  }
+
+  .app-header {
+    .checkbtn{
+      display: block!important;
+      font-size: 20px;
+    }
+    nav{
+      padding:1rem 1rem 1rem 1rem;
+    }
+  }
+  .nav-links{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    background: #2c3e50;
+    top:65px;
+  
+    left: -100%;
+    flex-direction: column;
+    transition: all .2s ease-out;
+  }
+ 
+  nav .nav-links .link{
+    display: block;
+    color:$white-color;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .nav-dropdown {
+        position: relative!important;
+      float: none;
+      background-color:rgba($white-color, 0.1);
+      box-shadow: none;
+      border-radius: 0;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      transform: none!important;
+      .link{
+      font-weight: 200;
+      }
+    }
+
+    
+  .page-filter{
+    .filter-list{
+      li{
+        display: block;
+        border:0;
+        padding:.6rem 0;
+        .filter-btn{
+          display: block;
+        }
+      }
+    }
+  }
+
+  .page-dashboard{
+    .page-content{
+      padding:0!important
+    }
+    .stats-list{
+      overflow: unset;
+      height: auto;
+      li{
+        h1{
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+
+  .page-title{
+    .actions-ctrl {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .login-page{
+    flex-direction: column;
+    .login-form,
+    .login-content{
+      width: 100%;
+      padding: 1rem;
+    }
+    .login-content{
+      height: 200px;
+    }
+    .logo{
+      margin: 0 auto;
+    }
+    .form{
+      .form-fields{
+        .form-group{
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+  }
+
+
+}
