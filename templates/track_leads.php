@@ -73,12 +73,11 @@
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="active">
                                         <td>
-                                            <label for="accounting" class="icon icon-primary icon-sm mr-2 dp">
-                                            <i class="fa fa-chevron-down"></i></label>
-					                        <input type="checkbox" name="accounting" id="accounting" data-toggle="toggle">    
-                                            PPC 
+                                            <label for="title">
+                                            PPC <span  class="icon icon-primary collaps-icon float-right"><i class="fa fa-chevron-down"></i></span></label>
+					                        <input type="checkbox" name="" id="title" data-toggle="toggle">    
                                         </td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
@@ -88,7 +87,7 @@
                                         <td><input type="text" class="form-control input-calc"></td>
                                     </tr>
                                 </tbody>
-                                <tbody class="hide skin-base">
+                                <tbody class="hide track-leads-collaps">
                                     <tr>
                                         <td>PPC1</td> 
                                         <td><input type="text" class="form-control input-calc"></td>
@@ -100,6 +99,15 @@
                                     </tr>
                                     <tr>
                                         <td>PPC2</td> 
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                        <td><input type="text" class="form-control input-calc"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PPC3</td> 
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>
                                         <td><input type="text" class="form-control input-calc"></td>

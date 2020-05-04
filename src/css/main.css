@@ -329,10 +329,10 @@ img {
 }
 
 .icon.icon-sm {
-  width: 20px;
-  height: 20px;
-  font-size: 12px;
-  line-height: 22px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .icon.icon-md {
@@ -946,12 +946,43 @@ hr {
   height: 30px;
 }
 
-.track_lead_tbl tbody.hide {
+.track_lead_tbl tbody tr.active {
+  background-color: rgba(238, 238, 238, 0.4);
+}
+
+.track_lead_tbl tbody tr.active td {
+  background-color: transparent;
+}
+
+.track_lead_tbl tbody tr.active td label {
+  color: #1f1f21;
+}
+
+.track_lead_tbl tbody tr.active td label .collaps-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.track_lead_tbl tbody.track-leads-collaps {
   background-color: #eee;
 }
 
-.track_lead_tbl tbody.hide td {
-  background-color: transparent;
+.track_lead_tbl tbody.track-leads-collaps tr td {
+  border-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.track_lead_tbl tbody.track-leads-collaps tr td:first-child {
+  padding-left: 50px;
+  color: rgba(31, 31, 33, 0.5);
+}
+
+.track_lead_tbl tbody.track-leads-collaps tr:last-child td {
+  border-bottom: 1px solid #eee;
 }
 
 .track_exp_tbl tr td:last-child {

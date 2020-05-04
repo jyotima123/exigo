@@ -384,10 +384,41 @@ hr{background-color:rgba($light-color, 0.2);}
         }
     }
     tbody{
-        &.hide{
+        tr{
+            &.active{
+                td{
+                    background-color: transparent;
+                    label{
+                        color: $dark-color;
+                        .collaps-icon{
+                            width: 20px;
+                            height: 20px;
+                            line-height: 22px;
+                            margin-left: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                background-color: rgba($base-color, 0.4);
+            }
+        }
+        &.track-leads-collaps{
             background-color: $base-color;
-            td{
-                background-color: transparent;
+            tr{
+                td{
+                    &:first-child{
+                        padding-left: 50px;
+                        color:rgba($dark-color,  0.5);
+                    }
+                    border-bottom: 0;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+                &:last-child{
+                    td{
+                        border-bottom: 1px solid $base-color;
+                    }
+                }
             }
         }
     }
